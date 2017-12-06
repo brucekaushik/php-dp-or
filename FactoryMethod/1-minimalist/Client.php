@@ -11,5 +11,8 @@ class Client
     {
         $this->someTextObject = new TextFactory();
         echo $this->someTextObject->startFactory() . "<br/>";
+        
+        $this->someGraphicObject = new GraphicsFactory();
+        echo $this->someGraphicObject->startFactory() . "<br/>";
     }
 }
