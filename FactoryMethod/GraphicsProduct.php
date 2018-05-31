@@ -8,7 +8,7 @@ class GraphicsProduct implements Product
     
     public function getProperties()
     {
-        $this->mfgProduct = "This is a graphic.";
+        $this->mfgProduct .= "<img src='imgs/Mali.png' width='500' height='500' />";
         return $this->mfgProduct;
     }
 }
