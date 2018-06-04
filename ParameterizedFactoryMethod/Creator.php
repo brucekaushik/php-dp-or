@@ -1,15 +1,13 @@
 <?php
 
-namespace TextAndGraphics;
-
 abstract class Creator
 {
-   
-    abstract protected function factoryMethod();
+    abstract protected function factoryMethod(Product $product);
     
-    public function startFactory()
+    public function startFactory($productNow)
     {
-        $mfg = $this->factoryMethod();
+        $countryProduct = $productNow;
+        $mfg = $this->factoryMethod($countryProduct);
         return $mfg;
     }
 }

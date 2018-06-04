@@ -1,18 +1,13 @@
 <?php
 
-namespace TextAndGraphics;
-
 class Client
 {
-    private $someGraphicObject;
-    private $someTextObject;
+    private $countryFactory;
     
     public function __construct()
     {
-        $this->someTextObject = new TextFactory();
-        echo $this->someTextObject->startFactory() . "<br/>";
-        
-        $this->someGraphicObject = new GraphicsFactory();
-        echo $this->someGraphicObject->startFactory() . "<br/>";
+        $this->countryFactory = new CountryFactory();
+
+        echo $this->countryFactory->startFactory(new KyrgyzstanProduct()) . "<br/>";
     }
 }
