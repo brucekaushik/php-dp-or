@@ -9,5 +9,7 @@ class Client
         $this->countryFactory = new CountryFactory();
 
         echo $this->countryFactory->startFactory(new KyrgyzstanProduct()) . "<br/>";
+        
+        echo $this->countryFactory->startFactory(new MaliProduct()) . "<br/>";
     }
 }

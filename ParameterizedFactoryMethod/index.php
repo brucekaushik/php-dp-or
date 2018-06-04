@@ -7,6 +7,7 @@ include_once('Creator.php');
 include_once('Product.php');
 include_once('CountryFactory.php');
 include_once('KyrgyzstanProduct.php');
+include_once('MaliProduct.php');
 include_once('Client.php');
 
 $worker = new Client();
